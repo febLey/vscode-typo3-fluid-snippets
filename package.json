@@ -1,0 +1,40 @@
+{
+  "name": "typo3-fluid-snippets",
+  "displayName": "TYPO3 Fluid Snippets",
+  "description": "A collection for snippets for typo3 fluid",
+  "icon": "images/icon.svg",
+  "version": "0.0.0",
+  "preview": "true",
+  "publisher": "febley",
+  "galleryBanner": {
+    "color": "#0000FF",
+    "theme": "dark"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/febLey/vscode-typo3-fluid-snippets/issues",
+    "email": "smcbreen@microsoft.com"
+  },
+  "homepage": "https://github.com/febLey/vscode-typo3-fluid-snippetsd",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/febLey/vscode-typo3-fluid-snippets.git"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/fluid.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.0.0"
+  }
+}
