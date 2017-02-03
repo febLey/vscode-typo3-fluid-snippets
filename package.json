@@ -1,7 +1,7 @@
 {
   "name": "typo3-fluid-snippets",
   "displayName": "TYPO3 Fluid Snippets",
-  "description": "A collection for snippets for typo3 fluid",
+  "description": "A collection of snippets for the TYPO3 Fluid syntax",
   "icon": "images/icon.svg",
   "version": "0.0.0",
   "preview": "true",
