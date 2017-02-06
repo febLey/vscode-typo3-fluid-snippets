@@ -23,6 +23,10 @@
     "categories": [
         "Snippets"
     ],
+    "keywords": [
+        "typo3",
+        "fluid"
+    ],
     "engines": {
         "vscode": "^1.0.0"
     },
