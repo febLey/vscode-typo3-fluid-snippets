@@ -208,6 +208,20 @@
     ],
     "description": "TYPO3 Fluid Inline | {f:format.bytes()}"
   },
+  "f:format.case": {
+    "prefix": "fFormatCase",
+    "body": [
+      "<f:format.case value=\"$1\" mode=\"${2|lower,upper,captial,uncapital,capitalWords|}\" />"
+    ],
+    "description": "TYPO3 Fluid | <f:format.case>"
+  },
+  "f:format.case Inline": {
+    "prefix": "fFormatCaseInline",
+    "body": [
+      "{f:format.case(value: $1, mode: '${2|lower,upper,captial,uncapital,capitalWords|}')}"
+    ],
+    "description": "TYPO3 Fluid Inline | {f:format.case()}"
+  },
   "f:format.cdata": {
     "prefix": "fFormatCdata",
     "body": [
