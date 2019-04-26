@@ -27,6 +27,13 @@
     ],
     "description": "TYPO3 Fluid | <f:base>"
   },
+  "f:base Inline": {
+    "prefix": "fBaseInline",
+    "body": [
+      "{f:base()}"
+    ],
+    "description": "TYPO3 Fluid Inline | {f:base()}"
+  },
   "f:cache.disable": {
     "prefix": "fCacheDisable",
     "body": [
@@ -48,12 +55,26 @@
     ],
     "description": "TYPO3 Fluid | <f:cache.static>"
   },
+  "f:cache.static Inline": {
+    "prefix": "fCacheStaticInline",
+    "body": [
+      "{f:cache.static(value: '$1')}"
+    ],
+    "description": "TYPO3 Fluid Inline | {f:cache.static()}"
+  },
   "f:cache.warmup": {
     "prefix": "fCacheWarmup",
     "body": [
       "<f:cache.warmup variables=\"{$1: $2}\"></f:cache.warmup"
     ],
     "description": "TYPO3 Fluid Inline | <f:cache.warmup>"
+  },
+  "f:cache.warmup Inline": {
+    "prefix": "fCacheWarmupInline",
+    "body": [
+      "{f:cache.warmup(variables: '{$1: $2}')}"
+    ],
+    "description": "TYPO3 Fluid Inline | {f:cache.warmup()}"
   },
   "f:cObject": {
     "prefix": "fCobject",
@@ -116,14 +137,14 @@
   "f:debug": {
     "prefix": "fDebug",
     "body": [
-      "<f:debug${1: title=\"$2\"}${3: inline=\"1\"}>$0</f:debug>"
+      "<f:debug${1: title=\"$2\"}${3: inline=\"1\"}>$4</f:debug>"
     ],
     "description": "TYPO3 Fluid | <f:debug>"
   },
   "f:debug Inline": {
     "prefix": "fDebugInline",
     "body": [
-      "{f:debug(title: '$1'${3:, inline: '1'})}"
+      "{f:debug(title: '$1'${2:, inline: '1'})}"
     ],
     "description": "TYPO3 Fluid Inline | {f:debug()}"
   },
@@ -246,14 +267,14 @@
   "f:format.case": {
     "prefix": "fFormatCase",
     "body": [
-      "<f:format.case value=\"$1\" mode=\"${2|lower,upper,captial,uncapital,capitalWords|}\" />"
+      "<f:format.case mode=\"${1|lower,upper,captial,uncapital,capitalWords|}\">$2</f:format.case>"
     ],
     "description": "TYPO3 Fluid | <f:format.case>"
   },
   "f:format.case Inline": {
     "prefix": "fFormatCaseInline",
     "body": [
-      "{f:format.case(value: $1, mode: '${2|lower,upper,captial,uncapital,capitalWords|}')}"
+      "{f:format.case(mode: '${1|lower,upper,captial,uncapital,capitalWords|}', value: '$2')}"
     ],
     "description": "TYPO3 Fluid Inline | {f:format.case()}"
   },
@@ -326,20 +347,6 @@
       "{f:format.htmlentitiesDecode(value: '$1'${2:, keepQuotes: $3})}"
     ],
     "description": "TYPO3 Fluid Inline | {f:format.htmlentitiesDecode()}"
-  },
-  "f:format.htmlspecialchars": {
-    "prefix": "fFormatHtmlspecialchars",
-    "body": [
-      "<f:format.htmlspecialchars${1: keepQuotes=\"1\"}${2: doubleEncode=\"1\"}>$3</f:format.htmlspecialchars>"
-    ],
-    "description": "TYPO3 Fluid | <f:format.htmlspecialchars>"
-  },
-  "f:format.htmlspecialchars Inline": {
-    "prefix": "fFormatHtmlspecialcharsInline",
-    "body": [
-      "{f:format.htmlspecialchars(value: '$1'${2:, keepQuotes: 1}${3:, doubleEncode: 1})}"
-    ],
-    "description": "TYPO3 Fluid Inline | {f:format.htmlspecialchars()}"
   },
   "f:format.htmlspecialchars": {
     "prefix": "fFormatHtmlspecialchars",
@@ -509,7 +516,7 @@
   "f:section": {
     "prefix": "fSection",
     "body": [
-      "<f:section name=\"$1\"/>"
+      "<f:section name=\"$1\"/>$2</f:section>"
     ],
     "description": "TYPO3 Fluid | <f:section>"
   },
@@ -600,7 +607,7 @@
   "f:spaceless": {
     "prefix": "fSpaceless",
     "body": [
-      "<f:spaceless>{$1}</f:spaceless>"
+      "<f:spaceless>$1</f:spaceless>"
     ],
     "description": "TYPO3 Fluid | <f:spaceless>"
   },
@@ -609,8 +616,7 @@
     "body": [
       "<f:switch expression=\"{$1}\">",
       "\t<f:case value=\"$2\">$3</f:case>",
-      "\t<f:case default=\"TRUE\">$4</f:case>",
-      "\t<f:defaultCase>$5</f:defaultCase>",
+      "\t<f:defaultCase>$4</f:defaultCase>",
       "</f:switch>"
     ],
     "description": "TYPO3 Fluid | <f:switch>"
@@ -721,16 +727,9 @@
     "description": "TYPO3 Fluid Inline | {f:uri.typolink()}"
   },
   "f:variable": {
-    "prefix": "fVariableTagNotation2",
+    "prefix": "fVariable",
     "body": [
       "<f:variable name=\"$1\">$2</f:variable>"
-    ],
-    "description": "TYPO3 Fluid | <f:variable>"
-  },
-  "f:variable Value as attribute notation": {
-    "prefix": "fVariableValueAsAttributeNotation",
-    "body": [
-      "<f:variable name=\"$1\" value=\"$2\" />"
     ],
     "description": "TYPO3 Fluid | <f:variable>"
   },
