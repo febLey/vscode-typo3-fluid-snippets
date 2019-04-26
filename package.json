@@ -3,7 +3,7 @@
     "displayName": "TYPO3 Fluid Snippets",
     "description": "A collection of snippets for the TYPO3 Fluid syntax",
     "icon": "images/icon.png",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "preview": true,
     "publisher": "febley",
     "galleryBanner": {
