@@ -2,7 +2,7 @@
     "name": "typo3-fluid-snippets",
     "displayName": "TYPO3 Fluid Snippets",
     "description": "A collection of snippets for the TYPO3 Fluid syntax",
-    "icon": "images/icon.svg",
+    "icon": "images/icon.png",
     "version": "0.1.2",
     "preview": true,
     "publisher": "febley",
