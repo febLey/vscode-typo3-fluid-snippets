@@ -13,4 +13,4 @@ For further infomation about some of the snippets lookup the TYPO3 Fluid documen
 
 ## Contributing
 
-If you'd like to send a pull request please make sure that you have a working [editorconfig](http://editorconfig.org) plugin installed.
+If you'd like to send a pull request please make sure that you have a working [editorconfig](http://editorconfig.org) plugin installed!
