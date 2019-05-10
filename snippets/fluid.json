@@ -379,7 +379,7 @@
   "f:format.number": {
     "prefix": "fFormatNumber",
     "body": [
-      "<f:format.number decimals=\"$1\"${2: decimalSeparator=\"${3:.}\"}${4: thousandsSeparator=\"${5:,}\"}>$2</f:format.number>"
+      "<f:format.number decimals=\"$1\"${2: decimalSeparator=\"${3:.}\"}${4: thousandsSeparator=\"${5:,}\"}>$6</f:format.number>"
     ],
     "description": "TYPO3 Fluid inline | <f:format.number>"
   },
