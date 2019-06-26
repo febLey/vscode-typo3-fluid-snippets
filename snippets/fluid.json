@@ -467,7 +467,7 @@
   "f:if": {
     "prefix": "fIf",
     "body": [
-      "<f:if condition=\"$1\">$2</f:if>"
+      "<f:if condition=\"{$1}\">$2</f:if>"
     ],
     "description": "TYPO3 Fluid | <f:if>"
   },
@@ -488,7 +488,7 @@
   "f:if Inline": {
     "prefix": "fIfInline",
     "body": [
-      "{f:if(condition: $1, then: '$2'${3:, else: '$4'})}"
+      "{f:if(condition: '{$1}', then: '$2'${3:, else: '$4'})}"
     ],
     "description": "TYPO3 Fluid Inline | {f:if()}"
   },
