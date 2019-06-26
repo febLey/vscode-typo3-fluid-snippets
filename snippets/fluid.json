@@ -299,6 +299,13 @@
     ],
     "description": "TYPO3 Fluid | <f:format.crop>"
   },
+  "f:format.crop Inline": {
+    "prefix": "fFormatCropInline",
+    "body": [
+      "{f:format.crop(maxCharacters:\"$1\"${2:, append:\"$3\"}${4:, respectWordBoundaries:\"1\"}${5:, respectHtml:\"1\"})}"
+    ],
+    "description": "TYPO3 Fluid Inline | {f:format.crop()}"
+  },
   "f:format.currency": {
     "prefix": "fFormatCurrency",
     "body": [
