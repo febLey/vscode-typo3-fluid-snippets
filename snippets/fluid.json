@@ -302,7 +302,7 @@
   "f:format.crop Inline": {
     "prefix": "fFormatCropInline",
     "body": [
-      "{$1 -> f:format.crop(maxCharacters:'$2'${3:, append:'$4'}${5:, respectWordBoundaries:'1'}${6:, respectHtml:'1'})}"
+      "{$1 -> f:format.crop(maxCharacters: '$2'${3:, append: '$4'}${5:, respectWordBoundaries: '1'}${6:, respectHtml: '1'})}"
     ],
     "description": "TYPO3 Fluid Inline | {f:format.crop()}"
   },
