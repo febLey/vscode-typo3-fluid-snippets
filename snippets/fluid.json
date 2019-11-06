@@ -523,7 +523,7 @@
   "f:section": {
     "prefix": "fSection",
     "body": [
-      "<f:section name=\"$1\"/>$2</f:section>"
+      "<f:section name=\"$1\">$2</f:section>"
     ],
     "description": "TYPO3 Fluid | <f:section>"
   },
