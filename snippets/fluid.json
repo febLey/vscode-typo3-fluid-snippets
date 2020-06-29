@@ -134,17 +134,24 @@
     ],
     "description": "TYPO3 Fluid inline | {f:cycle()}"
   },
+	"f:debug Extended": {
+		"prefix": "fDebugExt",
+		"body": [
+			"<f:debug${1: title=\"$2\"}${3: inline=\"$4\"}${5: ansiColors=\"$6\"}${7: maxDepth=\"$8\"}${9: plainText=\"$10\"}>$11</f:debug>"
+		],
+		"description": "TYPO3 Fluid | <f:debug> (extended)"
+	},
   "f:debug": {
     "prefix": "fDebug",
     "body": [
-      "<f:debug${1: title=\"$2\"}${3: inline=\"1\"}>$4</f:debug>"
+      "<f:debug${1: title=\"$2\"}${3: inline=\"$4\"}>$5</f:debug>"
     ],
     "description": "TYPO3 Fluid | <f:debug>"
   },
   "f:debug Inline": {
     "prefix": "fDebugInline",
     "body": [
-      "{f:debug(title: '$1'${2:, inline: '1'})}"
+      "{f:debug(title: '$1'${2:, inline: '$3'})}"
     ],
     "description": "TYPO3 Fluid Inline | {f:debug()}"
   },
